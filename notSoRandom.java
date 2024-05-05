@@ -17,9 +17,11 @@ public class notSoRandom
         long secondNum = -638982434;
         long seed = 0;
         //check all next nums (after the first) and when we get the second num, we have found the seed
-        for (int i = 0; i < 65536; i++) {
+        for (int i = 0; i < 65536; i++) 
+        {
             seed = firstNum * 65536 + i;
-            if (nextNum(seed) == secondNum) {
+            if (nextNum(seed) == secondNum) 
+            {
                 System.out.println("Seed found: " + seed);
                break;
             }
